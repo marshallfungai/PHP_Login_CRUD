@@ -1,5 +1,9 @@
 <?php
 require 'helpers/session.hp.php';
+$loggein = Session::authenticate();
+if(!$loggein) {
+    header('Location: index.php');
+}
 $userAccess = $_SESSION['a_USER']['permission']; //access control
 //print_r($_SESSION['a_USER']);
 
