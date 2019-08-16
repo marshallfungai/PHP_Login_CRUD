@@ -16,7 +16,7 @@ Tags: PDO, SQL, PHP, login
  
  
 <h4>Note:</h4>
-- If you are using a locahost, make sure "sessions" are enabled and they are auto on <br>
+- If you are using a locahost, make sure "sessions" are enabled and "Initialize session on request startup." is true <br>
 - More efforts can be made to validate user inputs on live project <br><br>
 
 Login hashing used: password_hash() => ref:  www.php.net/manual/en/function.password-hash.php
