@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 16, 2019 at 05:03 AM
--- Server version: 10.1.32-MariaDB
--- PHP Version: 7.2.5
+-- Generation Time: Aug 16, 2019 at 09:11 AM
+-- Server version: 10.3.16-MariaDB
+-- PHP Version: 7.1.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -64,12 +64,11 @@ CREATE TABLE `payments` (
 --
 
 INSERT INTO `payments` (`id`, `Package`, `date`, `status`, `customer`, `Price`, `Modified by`) VALUES
-(5, 'Gold', '2019-08-15', 'paid', 2, 67, 1),
+(5, 'silver', '2019-08-16', 'Paid', 2, 67, 1),
 (6, 'student', '2019-08-16', 'Paid', 1, 90, 2),
 (7, 'Gold', '2019-08-15', 'paid', 2, 67, 1),
-(8, 'Gold', '2019-08-16', 'Paid', 1, 90, 2),
-(9, 'Gold', '2019-08-16', 'Paid', 2, 67, 1),
-(10, 'Silver', '2019-08-12', 'paid', 1, 90, 2);
+(8, 'silver', '2019-08-16', 'Paid', 1, 90, 2),
+(9, 'Gold', '2019-08-16', 'Paid', 2, 67, 1);
 
 -- --------------------------------------------------------
 
@@ -91,9 +90,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`uid`, `uname`, `upass`, `fullname`, `uemail`, `permission`) VALUES
-(1, 'marshall', '1234567', 'marshall fungai', 'marshall@nethouse.net', 'member'),
-(2, 'Vural', '1234567', 'Vural Net', 'vural@nethouse.net', 'admin'),
-(8, 'Brian', '1234567', 'Brian M', 'brian@icloud.com', 'subscriber');
+(1, 'marshall', '$2y$10$6.weCAOZ3v0gj6sNJxP7O.nY9DL2iPDCDLOFR5AR6yahXuqgbX6zm', 'marshall fungai', 'marshall@nethouse.net', 'member'),
+(2, 'Vural', '$2y$10$U4LeA/CKfaYwGfA/o/08POhfmIgF2H8L5MIa5ZIqFUDRMEAuYoiZS', 'Vural Net', 'vural@nethouse.net', 'admin'),
+(8, 'Brian', '$2y$10$yPfLy5iF/ao0T5K2fdMY/.SZn.xufd1vkNuOwTCGeszFbIkPSRrb6', 'Brian M', 'brian@icloud.com', 'subscriber');
 
 --
 -- Indexes for dumped tables
