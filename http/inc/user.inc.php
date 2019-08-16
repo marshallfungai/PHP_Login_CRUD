@@ -1,5 +1,5 @@
 <?php
-require_once 'db.inc.php';
+require_once 'db.inc.php'; //database connection
 require_once 'helpers/security.hp.php'; //security functions
 
 class User extends DbConnect {
@@ -10,7 +10,7 @@ class User extends DbConnect {
 
     public function __construct()
     {
-        parent::connect();
+        parent::connect(); //connect database
     }
 
     //Read All Payment data from database

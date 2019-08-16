@@ -13,20 +13,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-    $LoginUser = new AuthenticateUser($s_username, $s_pwd);
+    $LoginUser = new AuthenticateUser($s_username, $s_pwd); //authenticate user
     $b_status = $LoginUser->getLoginUser(); //Login operation == returns boolean
 
+    //Debugging for hashed passwords
+//    $hashed_password = password_hash($s_pwd, PASSWORD_DEFAULT);
+//    var_dump($hashed_password);
+//    exit(1);
 
-    if($b_status === false){
+    if($b_status === false) {
 
         header('Location:../index.php?status=invalid'); //return invalid user from Authentication class
-        //$hashed_password = password_hash($s_pwd, PASSWORD_DEFAULT);
-        //var_dump($hashed_password);
-
         exit(1);
     }
 
     header('Location:../dashboard.php');  //valid login
+
 
 
 }
