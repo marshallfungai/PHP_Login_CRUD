@@ -16,5 +16,7 @@ Tags: PDO, SQL, PHP, login
  
  
 <h4>Note:</h4>
-Efforts can be made to validate user inputs on live project <br><br>
+- If you are using a locahost, make sure "sessions" are enabled and they are auto on <br>
+- More efforts can be made to validate user inputs on live project <br><br>
+
 Login hashing used: password_hash() => ref:  www.php.net/manual/en/function.password-hash.php
