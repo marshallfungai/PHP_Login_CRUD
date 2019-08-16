@@ -1,6 +1,7 @@
 # PHP_Login_CRUD
 
 <h2>Permission-based login system</h4>
+
 Tags: PDO, SQL, PHP, login
 
 
@@ -15,4 +16,5 @@ Tags: PDO, SQL, PHP, login
  
  
 <h4>Note:</h4>
-Efforts can be made to validate user inputs on live project
+Efforts can be made to validate user inputs on live project <br><br>
+Login hashing used: password_hash() => ref:  www.php.net/manual/en/function.password-hash.php
