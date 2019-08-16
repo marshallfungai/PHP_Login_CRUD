@@ -1,0 +1,90 @@
+/*
+  App: Nethouse Login
+  ver: 0.0.1
+  Author: Marshall Fungai  
+*/
+
+
+* {
+    padding: 0; margin: 0;
+
+}
+
+:root {
+    --default-color-text: #fff;
+
+}
+
+html, body, section {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, p{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+}
+
+h5.modal-title  {
+    color: #373B44;
+}
+
+
+.main_body{
+    height: 100%;
+    display: inherit;
+    padding: 20px;
+    text-align: center;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.navbar {
+ margin-bottom: 50px;
+
+}
+
+.login_main{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.loginBody h2, .loginBody a {
+    color: var(--default-color-text);
+}
+
+.form-group {
+       max-width: 40vw;
+       margin: 20px auto;
+}
+
+.login_Error.valid {
+    display: none;
+}
+
+.login_Error.invalid {
+    display: block;
+    color: #fff;
+    border: 1px solid #fff;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+/* Media Queries */
+@media (max-width: 900px) {
+    .form-group {
+        max-width: 70vw;
+        margin: 20px auto;
+    }
+}
+
+

@@ -1,0 +1,2 @@
+INSERT INTO `payments` (`id`, `Package`, `date`, `status`, `user`) VALUES (NULL, 'Gold', '2019-08-15', 'unpaid', '1'), (NULL, 'Platnum', '2019-08-13', 'Paid', '2');
+INSERT INTO `users` (`uid`, `uname`, `upass`, `fullname`, `uemail`, `permission`) VALUES (NULL, 'Brian', '1234567', 'Brian M', 'brian@icloud.com', 'subscriber');
